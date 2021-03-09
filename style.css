@@ -67,7 +67,7 @@
 }
 
 .weather-result-img img {
-    width: 10em;
+    width: 90%;
 }
 
 .list {
@@ -81,7 +81,8 @@
 }
 
 .list img {
-    max-width: 10em;
+    max-width: 85%;
+    margin-left: 10px;
 }
 
 .location-link {
@@ -117,11 +118,26 @@
     }
 
     .list-result {
-        margin: 0;
+        margin: 5px;
         flex: 1;
     }
 }
 
-@media (min-width: 769px) and (max-width: 1023px) {
-    
+@media all and (min-width: 769px) and (max-width: 1023px) {
+    .btn-primary {
+        width: 22%;
+    }
+
+    .container {
+        grid-template-areas: 
+        'content sidebar'
+        'future-result'
+        'recent-location';
+    }
+}
+
+@media all and (min-width: 1023px) {
+    .btn-primary {
+        width: 22%;
+    }
 }
