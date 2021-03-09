@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+    padding: 1.5rem;
+    background: #a6cafe;
+    border-radius: 1rem;
+}
+
+/* Utility class starts*/
+.primary-text {
+    color: #fff;
+}
+
+.secondary-text {
+    text-align: center;
+}
+
+.btn-primary {
+    padding: 8px;
+    margin-left: 20px;
+    width: 10%;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    background: #0e6bff;
+    text-align: center;
+}
+
+.search-bar {
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px #9cb4ce;
+}
+/* Utility Class End */
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        'content content sidebar'
+        'future-result future-result sidebar'
+        'recent-location recent-location recent-location';
+    grid-gap: 1rem;
+}
+
+.content {
+    grid-area: content;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.recent-location {
+    grid-area: recent-location;
+}
+
+.sidebar {
+    display: flex;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style: none;
+    color: #41637e;
+}
+
+.weather-result-img img {
+    width: 10em;
+}
+
+.list {
+    display: flex;
+}
+
+.list-result {
+    background: #fff;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.list img {
+    max-width: 10em;
+}
+
+.location-link {
+    margin-right: 1rem;
+}
+
+/* Media Query */
+@media all and (max-width: 700px) {
+    .btn-primary {
+        width: 20%;
+    }
+
+    .container {
+        grid-template-areas: 
+        'content'
+        'sidebar'
+        'future-result'
+        'recent-location';
+    }
+
+    .list {
+        display: block;
+    }
+}
+
+@media all and (min-width: 701px) and (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+        'content'
+        'sidebar'
+        'future-result'
+        'recent-location';
+    }
+
+    .list-result {
+        margin: 0;
+        flex: 1;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    
+}
