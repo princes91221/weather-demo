@@ -21,7 +21,7 @@
 .btn-primary {
     padding: 8px;
     margin-left: 20px;
-    width: 10% !important;
+    width: 10em;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -92,7 +92,7 @@
 /* Media Query */
 @media all and (max-width: 700px) {
     .btn-primary {
-        width: 23% !important;
+        width: 5em;
     }
 
     .container {
@@ -124,9 +124,9 @@
 }
 
 @media all and (min-width: 769px) and (max-width: 1023px) {
-    .btn-primary {
+    /* .btn-primary {
         width: 22% !important;
-    }
+    } */
 
     .container {
         grid-template-areas: 
@@ -136,7 +136,7 @@
     }
 }
 
-@media all and (min-width: 1023px) {
+@media (min-width: 1023px) and (max-width: 1300px) {
     .btn-primary {
         width: 22% !important;
     }
