@@ -15,6 +15,7 @@
 }
 
 .secondary-text {
+    margin: 10px 10px;
     text-align: center;
 }
 
@@ -62,6 +63,10 @@
     grid-area: recent-location;
 }
 
+.recent-location p {
+    margin-bottom: 7px;
+}
+
 .sidebar {
     display: flex;
 }
@@ -102,6 +107,10 @@
         display: block;
         margin-bottom: 0.5em;
     }
+
+    .future-result {
+        margin-top: -1em;
+    }
 }
 
 @media all and (max-width: 700px) {
@@ -115,6 +124,10 @@
         'sidebar'
         'future-result'
         'recent-location';
+    }
+
+    .future-result {
+        margin-top: -1em;
     }
 
     .list {
@@ -131,9 +144,8 @@
         'recent-location';
     }
 
-    .list-result {
-        margin: 5px;
-        flex: 1;
+    .future-result {
+        margin-top: -1em;
     }
 }
 
