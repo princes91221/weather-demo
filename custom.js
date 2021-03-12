@@ -1,19 +1,9 @@
-var request = new XMLHttpRequest();
-request.open('GET', 'http://jsoneditoronline.org/#left=local.taqedu&right=local.wibubo', 'true');
-request.onload = function() {
-    
-    //Accessing JSON data below
-    var data = JSON.parse(this.response);
+// document.getElementById('search-button').onclick = function changeContent() {
+//     console.log('Hello');
+// }
 
-    if (request.status >= 200 && request.status < 400) {
-        data.forEach((openweatherapp) => {
-            console.log(openweatherapp.weather);
-        })
-    } else {
-        const errorMessage = document.createElement('error');
-        errorMessage.textContent = 'Ahh! No data found';
-        app.appendChild(errorMessage);
-    }
+const button = document.querySelector('.btn-primary');
+button.onclick = function() {
+    const inputValue = document.querySelector('.search-input').value;
+    console.log('your entered location is: '+inputValue);
 }
-
-request.send();
