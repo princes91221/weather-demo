@@ -100,6 +100,10 @@
 
 /* Media Query */
 @media all and (min-width: 280px) and (max-width: 500px) {
+    .btn-primary {
+        width: 3em;
+    }
+
     .location-link:not(:last-child) {
         display: block;
         margin-bottom: 0.5em;
