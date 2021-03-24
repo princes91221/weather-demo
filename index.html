@@ -12,18 +12,18 @@
         <div class="container">
             <div class="search-panel">
                 <input type="text" placeholder="Enter location" class="search-input">
-                <button class="btn-primary">Search</button>
+                <button class="btn-primary" id="search-button">Search</button>
             </div>
             <aside class="sidebar">
                 <div class="weather-result">
-                    <p class="primary-text">Today</p>
-                    <p class="primary-text">Monday 08 March 2021</p>
-                    <h1 class="primary-text">Rotterdam, NL</h1>
-                    <h1 class="primary-text">3&deg;C</h1>
+                    <p id="day" class="primary-text">{ Today }</p>
+                    <p id="date" class="primary-text">{ Monday 08 March 2021 }</p>
+                    <h1 id="location" class="primary-text">{ Rotterdam, NL }</h1>
+                    <h1 id="temperature" class="primary-text">{ 3&deg;C }</h1>
                     <ul>
-                        <li>Perception: 12%</li>
-                        <li>Wind: 24 km/h</li>
-                        <li>Humidity: 98%</li>
+                        <li id="perception">{ Perception: 12% }</li>
+                        <li id="wind">{ Wind: 24 km/h }</li>
+                        <li id="humidity">{ Humidity: 98% }</li>
                     </ul>
                 </div>
                 <div class="weather-result-img">
@@ -34,29 +34,29 @@
                 <h2 class="primary-text">Next 5 days</h2>
                 <div class="days-result">
                     <div class="days-result-item">
-                        <p class="secondary-text">Tue 09</p>
+                        <p id="day-1" class="secondary-text">{ Tue 09 }</p>
                         <img src="/cloud.png" alt="">
-                        <p class="secondary-text">7&deg;/10&deg;</p>
+                        <p id="temperature-1" class="secondary-text">{ 7&deg;/10&deg; }</p>
                     </div>
                     <div class="days-result-item">
-                        <p class="secondary-text">Wed 10</p>
+                        <p id="day-2" class="secondary-text">{ Wed 10 }</p>
                         <img src="/cloud.png" alt="">
-                        <p class="secondary-text">7&deg;/10&deg;</p>
+                        <p id="temperature-2" class="secondary-text">{ 7&deg;/10&deg; }</p>
                     </div>
                     <div class="days-result-item">
-                        <p class="secondary-text">Thu 11</p>
+                        <p id="day-3" class="secondary-text">{ Thu 11 }</p>
                         <img src="/cloud.png" alt="">
-                        <p class="secondary-text">7&deg;/10&deg;</p>
+                        <p id="temperature-3" class="secondary-text">{ 7&deg;/10&deg; }</p>
                     </div>
                     <div class="days-result-item">
-                        <p class="secondary-text">Fri 12</p>
+                        <p id="day-4" class="secondary-text">{ Fri 12 }</p>
                         <img src="/cloud.png" alt="">
-                        <p class="secondary-text">7&deg;/10&deg;</p>
+                        <p id="temperature-4" class="secondary-text">{ 7&deg;/10&deg; }</p>
                     </div>
                     <div class="days-result-item">
-                        <p class="secondary-text">Sat 13</p>
+                        <p id="day-5" class="secondary-text">{ Sat 13 }</p>
                         <img src="/cloud.png" alt="">
-                        <p class="secondary-text">7&deg;/10&deg;</p>
+                        <p id="temperature-5" class="secondary-text">{ 7&deg;/10&deg; }</p>
                     </div>
                 </div>
             </div>
